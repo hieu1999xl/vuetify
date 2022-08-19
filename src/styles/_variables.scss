@@ -1,0 +1,29 @@
+// Globals
+$body-font-family: 'Roboto', sans-serif !default;
+$border-radius-root: 6px;
+$font-size-root: 14px;
+
+// Sheet - Card
+$sheet-elevation: 0 !default;
+$card-elevation: 0 !default;
+
+// v-button
+$btn-text-transform: capitalize !default;
+$btn-text-transform: capitalize !default;
+
+// v-dialog
+$dialog-margin: 12px;
+$dialog-card-title-padding: 16px 12px 10px !default;
+$dialog-card-subtitle-padding: 0 12px 10px !default;
+$dialog-card-actions-padding: 8px 8px !default;
+$dialog-card-text-padding: 0 12px 10px !default;
+
+// v-card
+$card-text-font-size: 1rem !default;
+$card-text-font-weight: 400 !default;
+$card-text-letter-spacing: .03125em !default;
+$card-text-line-height: 1.5rem !default;
+
+// Stepper
+$stepper-content-btn-margin: 12px 4px 4px 0 !default;
+$stepper-content-padding: 12px 12px 8px 12px !default;
