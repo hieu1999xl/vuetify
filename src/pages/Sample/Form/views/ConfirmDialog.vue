@@ -46,9 +46,9 @@
             },
         },
         watch: {
-            confirmDialog() {
-                this.dialog = this.confirmDialog
-            },
+            // confirmDialog(newvaleu) {
+            //     this.dialog = this.confirmDialog
+            // },
         },
         mounted() {
             this.dialog = this.confirmDialog
