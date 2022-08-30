@@ -1,11 +1,12 @@
 <template>
     <v-sheet color="transparent" height="100%" width="100%" min-height="100vh" class="d-flex flex-column justify-content-between align-center min-vh-100 min-width">
-        <v-sheet color="transparent" class="text-center mt-16" height="100%" width="100%" max-width="calc(616px + 32px)">
+        <v-sheet color="transparent" class="text-center d-flex flex-column box-login" height="100%" width="100%" max-width="calc(616px + 32px)">
             <v-sheet color="transparent" class="text-center">
                 <v-img src="@/assets/logo.svg" alt="CVG Building Management System" class="img_login ma-auto mb-8" width="100%" max-width="212" contain />
             </v-sheet>
             <v-sheet flat tile color="transparent pl-4 pr-4">
                 <p class="font-weight-bold text-h5 mb-8 text-uppercase">Đăng nhập</p>
+                <v-alert text prominent type="error" :icon="false" class="text-left"> Số điện thoại hoặc mật khẩu không chính xác. </v-alert>
                 <form @submit.prevent="submit">
                     <p class="text-left mb-1 caption">Số điện thoại</p>
                     <v-text-field type="text" v-model="itemForm.phone" outlined :name="Math.random()" :rules="rules.phone" autocomplete="username" single-line label="Nhập số điện thoại" required />
@@ -126,6 +127,17 @@
     .color-term {
         a {
             color: var(--color-info);
+        }
+    }
+
+    .box-login {
+        padding-top: 180px;
+    }
+
+    @media (max-width: 1440px) {
+        .box-login {
+            padding-top: 0;
+            justify-content: center;
         }
     }
 
