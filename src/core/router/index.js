@@ -13,6 +13,8 @@ import SampleForm from '../../pages/Sample/Form/SampleForm'
 
 import LoginForm from '../../pages/Login/LoginForm'
 
+import Welcome from '../../pages/Welcome/Welcome'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -51,6 +53,11 @@ const routes = [
         path: '/login',
         name: 'LoginForm',
         component: LoginForm,
+    },
+    {
+        path: '/welcome',
+        name: 'Welcome',
+        component: Welcome,
     },
     {
         path: '/system-error',
