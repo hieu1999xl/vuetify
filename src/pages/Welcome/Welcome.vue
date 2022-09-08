@@ -48,14 +48,69 @@
                     </v-col>
                 </v-row>
                 <v-row>
-                    <v-col md="4" class="pl-0 pr-2">
-                        <v-sheet color="red"> <p>aaaaaaaaaa</p> </v-sheet>
+                    <v-col md="4" class="pl-0 pr-2 pt-0">
+                        <v-sheet min-height="434" height="auto">
+                            <v-list dense nav class="pa-4">
+                                <p class="fz-16 mb-6 pa-0 font-weight-bold subheader-notification">Quản Trị Tập Đoàn</p>
+                                <v-list-item class="pa-0 list-notification" v-for="item in items_coporation" :key="item.title">
+                                    <v-list-item-icon class="mr-2">
+                                        <v-icon>{{ item.icon }}</v-icon>
+                                    </v-list-item-icon>
+
+                                    <v-list-item-content>
+                                        <v-list-item-title class="text-body-2">{{ item.title }}</v-list-item-title>
+                                    </v-list-item-content>
+                                    <v-btn elevation="0" small left dark color="administration" max-width="78" height="28" :to="item.path" outlined>
+                                        <span>Quản Trị</span>
+                                    </v-btn>
+                                </v-list-item>
+                            </v-list>
+                        </v-sheet>
                     </v-col>
-                    <v-col md="4" class="pl-2 pr-2">
-                        <v-sheet color="red"> <p>aaaaaaaaaa</p> </v-sheet>
+                    <v-col md="4" class="pl-2 pr-2 pt-0">
+                        <v-sheet color="red">
+                            <v-sheet min-height="434" height="auto">
+                                <v-list dense nav class="pa-4">
+                                    <p class="fz-16 mb-6 pa-0 font-weight-bold subheader-notification">Quản Trị Công Ty Địa Phương</p>
+                                    <v-autocomplete dense></v-autocomplete>
+                                    <v-list-item class="pa-0 list-notification" v-for="item in items_coporation" :key="item.title">
+                                        <v-list-item-icon class="mr-2">
+                                            <v-icon>{{ item.icon }}</v-icon>
+                                        </v-list-item-icon>
+
+                                        <v-list-item-content>
+                                            <v-list-item-title class="text-body-2">{{ item.title }}</v-list-item-title>
+                                        </v-list-item-content>
+                                        <v-btn elevation="0" small left dark color="administration" max-width="78" height="28" :to="item.path" outlined>
+                                            <span>Quản Trị</span>
+                                        </v-btn>
+                                    </v-list-item>
+                                </v-list>
+                            </v-sheet></v-sheet
+                        >
                     </v-col>
-                    <v-col md="4" class="pl-2 pr-0">
-                        <v-sheet color="red"> <p>aaaaaaaaaa</p> </v-sheet>
+                    <v-col md="4" class="pl-2 pr-0 pt-0">
+                        <v-sheet color="red">
+                            <v-sheet min-height="434" height="auto">
+                                <v-list dense nav class="pa-4">
+                                    <p class="fz-16 mb-6 pa-0 font-weight-bold subheader-notification">Quản Trị Điểm bán</p>
+                                    <v-autocomplete dense></v-autocomplete>
+                                    <v-autocomplete dense></v-autocomplete>
+                                    <v-list-item class="pa-0 list-notification" v-for="item in items_coporation" :key="item.title">
+                                        <v-list-item-icon class="mr-2">
+                                            <v-icon>{{ item.icon }}</v-icon>
+                                        </v-list-item-icon>
+
+                                        <v-list-item-content>
+                                            <v-list-item-title class="text-body-2">{{ item.title }}</v-list-item-title>
+                                        </v-list-item-content>
+                                        <v-btn elevation="0" small left dark color="administration" max-width="78" height="28" :to="item.path" outlined>
+                                            <span>Quản Trị</span>
+                                        </v-btn>
+                                    </v-list-item>
+                                </v-list>
+                            </v-sheet></v-sheet
+                        >
                     </v-col>
                 </v-row>
             </v-container>
@@ -91,6 +146,10 @@
                     title: 'Admin’s Full Name have done something with Someone’s something.',
                     subtitle: 'Hôm nay 15:35',
                 },
+            ],
+            items_coporation: [
+                { title: 'Quản Trị Website Thông Tin Tập Đoàn', icon: 'mdi-account-multiple-outline', path: '/sample-function-1' },
+                { title: 'Quản Trị Siêu Thị Vật Liệu Xây Dựng', icon: 'mdi-file-tree-outline', path: '/clone' },
             ],
         }),
     }

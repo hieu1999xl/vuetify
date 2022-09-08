@@ -19,6 +19,7 @@ export default new Vuetify({
                 warning: '#FFC107',
                 background: '#F5F5F5',
                 yellow: '#EE8022',
+                administration: '455A64',
             },
         },
     },
