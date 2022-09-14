@@ -20,6 +20,8 @@ export default new Vuetify({
                 background: '#F5F5F5',
                 yellow: '#EE8022',
                 administration: '455A64',
+                yellowAlert: '#fff1e4',
+                greenAlert: '#E8F5E9',
             },
         },
     },
