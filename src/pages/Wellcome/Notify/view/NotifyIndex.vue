@@ -67,4 +67,31 @@
     }
 </script>
 
-<style></style>
+<style scoped>
+    .list-notification {
+        min-height: unset !important;
+    }
+    .title-notification {
+        line-height: 21px !important;
+        overflow: unset;
+    }
+    .card-notification {
+        box-shadow: none !important;
+        border-radius: unset;
+    }
+    .notify-header {
+        height: 32px;
+        color: var(--color-noti);
+    }
+    .fz-12.line-height {
+        line-height: 18px;
+    }
+    .list-border {
+        border-bottom: 1px solid #90a4ae;
+        padding-bottom: 7px;
+    }
+    .list-border:last-child {
+        border: none;
+        padding-bottom: 0;
+    }
+</style>

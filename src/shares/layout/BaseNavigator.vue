@@ -50,7 +50,7 @@
                 { title: 'Sample Function 2', icon: 'mdi-file-tree-outline', path: '/clone' },
                 { title: 'Sample Function 3', icon: 'mdi-account-cog-outline', path: '/sample-function-3' },
                 { title: 'Sample Function 4', icon: 'mdi-cog-transfer-outline', path: '/sample-function-4' },
-                { title: 'Welcome', icon: 'mdi-cog-transfer-outline', path: '/welcome' },
+                { title: 'Welcome', icon: 'mdi-cog-transfer-outline', path: '/wellcome' },
             ],
         }),
         computed: {
