@@ -2,8 +2,8 @@
     <v-sheet color="transparent" class="overflow-hidden text-body-1" height="100%" width="100%">
         <perfect-scrollbar>
             <v-container style="max-width: 1177px">
-                <v-row class="ma-0">
-                    <v-col md="4" class="ma-2 pt-4">
+                <v-row>
+                    <v-col md="4" class="pa-2 pt-4">
                         <v-sheet color="white" class="text-center pa-8">
                             <p class="fz-20 font-weight-bold mb-2">Xin chào <span class="main-color">Lan Anh,</span></p>
                             <p class="ma-0 fz-14">Chào mừng bạn đến với</p>
@@ -14,10 +14,10 @@
                             </v-sheet>
                         </v-sheet>
                     </v-col>
-                    <v-col md="8" class="ma-2 pa-0 pt-4"><NotifyIndex /> </v-col>
+                    <v-col md="8" class="pa-2 pt-4"><NotifyIndex /> </v-col>
                 </v-row>
-                <v-row class="ma-0">
-                    <v-col md="4" class="ma-2 pa-0">
+                <v-row>
+                    <v-col md="4" class="pa-2">
                         <v-sheet min-height="434" height="auto">
                             <v-list dense nav class="pa-4">
                                 <p class="fz-16 mb-6 pa-0 font-weight-bold">Quản Trị Tập Đoàn</p>
@@ -36,7 +36,7 @@
                             </v-list>
                         </v-sheet>
                     </v-col>
-                    <v-col md="4" class="ma-2 pa-0">
+                    <v-col md="4" class="pa-2">
                         <v-sheet min-height="434" height="auto">
                             <v-list dense nav class="pa-4">
                                 <p class="fz-16 mb-6 pa-0 font-weight-bold">Quản Trị Công Ty Địa Phương</p>
@@ -76,7 +76,7 @@
                             </v-list>
                         </v-sheet>
                     </v-col>
-                    <v-col md="4" class="ma-2 pa-0">
+                    <v-col md="4" class="pa-2">
                         <v-sheet min-height="434" height="auto">
                             <v-list dense nav class="pa-4">
                                 <p class="fz-16 mb-6 pa-0 font-weight-bold">Quản Trị Điểm bán</p>
